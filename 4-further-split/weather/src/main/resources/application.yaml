@@ -1,0 +1,18 @@
+app:
+  weather:
+    api:
+      key: 19cff566f7357f510c5506f8345d470f
+
+spring:
+  application:
+    name: weather
+
+server:
+  port: 0
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}

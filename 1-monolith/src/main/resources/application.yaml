@@ -1,0 +1,4 @@
+app:
+  weather:
+    api:
+      key: 19cff566f7357f510c5506f8345d470f

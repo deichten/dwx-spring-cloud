@@ -1,0 +1,4 @@
+app:
+  weather:
+    api:
+      key: put-your-api-key-here

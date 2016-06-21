@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: gateway
+
+server:
+  port: 8080
+
+zuul:
+  routes:
+    weather:
+      path: /weather/**
+      serviceId: services
+      stripPrefix: false
+    members:
+      path: /members/**
+      serviceId: services
+      stripPrefix: false
+    resources:
+      path: /**
+      serviceId: resource
+      stripPrefix: false
+  ignored-services: '*'
