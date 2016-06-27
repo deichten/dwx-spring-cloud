@@ -41,3 +41,5 @@ In the final step the same setup as in 4 is used but everything supported by dis
 Collector getting all hystrix streams of all components and reporting accordingly.
 
 When opening the turbine collector be sure to add the default cluster identifier to the turbine stream. Otherwise only parts of your cluster will show up (usually the service named first – so gateway in this case). [link to open](http://localhost:5001/turbine.stream?cluster=default)
+
+**Attention** In order to run this example you will have to start the config server **always** first and should start the registry as a second service when the config server successfully started and is showing as `UP` on [http://localhost:8888/health](http://localhost:8888/health).
